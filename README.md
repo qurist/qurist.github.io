@@ -1,1 +1,1 @@
-# quristic.github.io
+# qurist.github.io
