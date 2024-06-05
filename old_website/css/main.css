@@ -3,7 +3,7 @@ body {
     width: 70%;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Helvetica', 'Arial', 'Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -40,4 +40,8 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+.section {
+    margin-bottom: 20px;
 }
