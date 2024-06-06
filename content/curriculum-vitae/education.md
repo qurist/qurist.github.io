@@ -2,6 +2,7 @@
 title: "Education"
 date:
 draft: true
+summary: "UMD | FU Berlin | Caltech"
 ---
 
 - Ph.D., Physics, University of Maryland, College Park (2021)  

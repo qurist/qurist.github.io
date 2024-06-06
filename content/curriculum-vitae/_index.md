@@ -4,4 +4,4 @@ date:
 draft: true
 ---
 
-This is my CV. It is also available for download (link).
+This is my CV. It is also available for download ([link](cv_aniruddhabapat.pdf)).

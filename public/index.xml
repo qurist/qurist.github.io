@@ -6,27 +6,28 @@
     <description>Recent content on Aniruddha Bapat</description>
     <generator>Hugo -- 0.126.3</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 05 Jun 2024 19:01:28 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 05 Jun 2024 19:01:28 -0500</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Education</title>
       <link>http://localhost:1313/curriculum-vitae/education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/curriculum-vitae/education/</guid>
-      <description>Ph.D., Physics, University of Maryland, College Park (2021)
-Thesis: Design and Optimization in Near-term Quantum Computation (advised by Stephen Jordan and Alexey Gorshkov)
-M.Sc., Physics, Freie Universität Berlin (2017)
-Thesis: A molecular dynamics study of the site-dependent interaction of a polyglutamine fibril with an attached biotinylated residue (advised by Petra Imhof and Markus Miettinen)
-B.S., Physics (with honor), California Institute of Technology (2014)</description>
+      <description>UMD | FU Berlin | Caltech</description>
     </item>
     <item>
       <title>Work Experience</title>
       <link>http://localhost:1313/curriculum-vitae/work-experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/curriculum-vitae/work-experience/</guid>
-      <description> Quantitative Researcher
-Duration: February 2023 - January 2024 Postdoctoral Scholar
-Duration: September 2021 - February 2023 Graduate Research Assistant, University of Maryland
-Duration: August 2016 - August 2021 </description>
+      <description>Optiver | Berkeley Lab | UMD</description>
     </item>
   </channel>
 </rss>
