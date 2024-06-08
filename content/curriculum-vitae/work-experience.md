@@ -3,6 +3,8 @@ title: "Work Experience"
 date:
 draft: true
 summary: "Optiver | Berkeley Lab | UMD"
+type: cv
+cvSection: "work-experience"
 ---
 
 - Quantitative Researcher  
@@ -11,3 +13,5 @@ summary: "Optiver | Berkeley Lab | UMD"
     Duration: September 2021 - February 2023
 - Graduate Research Assistant, University of Maryland  
     Duration: August 2016 - August 2021
+
+

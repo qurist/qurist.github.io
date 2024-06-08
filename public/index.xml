@@ -20,7 +20,18 @@
       <link>http://localhost:1313/curriculum-vitae/education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/curriculum-vitae/education/</guid>
-      <description>UMD | FU Berlin | Caltech</description>
+      <description>Ph.D., Physics, University of Maryland, College Park (2021)
+Thesis: Design and Optimization in Near-term Quantum Computation (advised by Stephen Jordan and Alexey Gorshkov)
+M.Sc., Physics, Freie Universität Berlin (2017)
+Thesis: A molecular dynamics study of the site-dependent interaction of a polyglutamine fibril with an attached biotinylated residue (advised by Petra Imhof and Markus Miettinen)
+B.S., Physics (with honor), California Institute of Technology (2014)</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/curriculum-vitae/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/curriculum-vitae/projects/</guid>
+      <description> P1 P2 P3 </description>
     </item>
     <item>
       <title>Work Experience</title>

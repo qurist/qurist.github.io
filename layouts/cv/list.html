@@ -1,0 +1,61 @@
+{{- define "main" }}
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>
+    {{- if (eq .Kind `term`) }}
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" stroke-width="2" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 14"> <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/> <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/> </svg>&nbsp; {{ .Title }}
+    {{- end}}
+    {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
+    <a href="index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+    {{- end }}
+  </h1>
+</header>
+{{- end }}
+
+<!-- Section-level content -->
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+<!-- List of page summaries of pages within section -->
+{{- $class := "cv-entry" -}}
+{{- range $cvsection := site.Params.cvItems -}}
+
+<article class="{{ $class }}">
+
+  {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+
+  <header class="cv-entry-header">
+    <h1>
+      <u class="cv-underline">{{- replace $cvsection.name "-" " " | title -}}</u>
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h1>
+  </header>
+
+  <!-- Loop over CV sections -->
+  {{- $entries := where (union site.RegularPages site.Sections) ".Params.cvSection" $cvsection.name -}}
+  {{- range $entry := $entries -}}
+  <div class="cv-entry-content">
+    <p>{{ .Content}}</p>
+  </div>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  {{- end -}}
+
+</article>
+{{- end -}}
+
+{{- end }}{{- /* end main */ -}}

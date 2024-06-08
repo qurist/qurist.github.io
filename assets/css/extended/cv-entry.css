@@ -1,0 +1,32 @@
+.entry-header h1 {
+    font-size: 20px;
+    line-height: var(--lineheight);
+}
+
+.cv-underline {
+    text-underline-offset: 3px;
+}
+.cv-entry {
+    position: relative;
+    /* margin-bottom: var(--gap); */
+    /* margin-left:  var(--gap); */
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: var(--entry);
+    /* border-radius: var(--radius); */
+    /* transition: transform 0.1s; */
+    /* border: 2px solid var(--border); */
+}
+
+.cv-entry-content {
+    margin: 10px 10px;
+    color: var(--secondary);
+    font-size: var(--entrysize);
+    line-height: var(--lineheight);
+    /* overflow: hidden;
+    display: -webkit-box; */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+}

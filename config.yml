@@ -10,25 +10,17 @@ menu:
       weight: 1  
       
 params:
-  
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
   hideFooter: True
 
   assets:
     disableHLJS: true
     disableScrollBarStyle: true
+
   cover:
     hiddenInList: true
     hiddenInSingle: true
-
-  homeInfoParams:
-    Title: About
-    Content: I am a physicist who has worked primarily in the field of quantum computation, 
-        in addition to about a year's worth of work each in computational biophysics and quantitative finance. 
-        I have a broad and ever evolving range of interests, both professionally and personally.   
-
-        Until January 2024, I was a researcher at the high-frequency trading firm Optiver. 
-        Before that, I worked as a postdoc in quantum computing at the [Lawrence Berkeley National Laboratory](http://www.lbl.gov "lbl.gov"). 
-        You can find out more in my [CV](curriculum-vitae/), or read more about me here.
 
   profileMode:
     enabled: true
@@ -52,3 +44,10 @@ params:
       url: "https://scholar.google.com/citations?user=D5qEcgYAAAAJ&hl=en"
     - name: "email"
       url: "mailto:ani1729@gmail.com"
+    - name: "CV"
+      url: "/cv_aniruddhabapat.pdf"
+
+  cvItems: 
+    - name: "work-experience"
+    - name: "education"
+    - name: "skills"
