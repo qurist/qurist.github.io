@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Aniruddha Bapat</description>
     <generator>Hugo -- 0.126.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Aug 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimal Control</title>
@@ -16,10 +16,10 @@
       <description></description>
     </item>
     <item>
-      <title>Publication</title>
-      <link>http://localhost:1313/tags/publication/</link>
+      <title>Quantum Architectures</title>
+      <link>http://localhost:1313/tags/quantum-architectures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/publication/</guid>
+      <guid>http://localhost:1313/tags/quantum-architectures/</guid>
       <description></description>
     </item>
     <item>
@@ -37,10 +37,17 @@
       <description></description>
     </item>
     <item>
-      <title>Quantum Architectures</title>
-      <link>http://localhost:1313/tags/quantum-architectures/</link>
+      <title>Thesis</title>
+      <link>http://localhost:1313/tags/thesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/quantum-architectures/</guid>
+      <guid>http://localhost:1313/tags/thesis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publication</title>
+      <link>http://localhost:1313/tags/publication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/publication/</guid>
       <description></description>
     </item>
   </channel>

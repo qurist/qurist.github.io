@@ -6,8 +6,15 @@
     <description>Recent content in Quantum Architectures on Aniruddha Bapat</description>
     <generator>Hugo -- 0.126.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Aug 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/quantum-architectures/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Design and Optimization in Near-Term Quantum Computation</title>
+      <link>http://localhost:1313/papers/phdthesis/</link>
+      <pubDate>Sat, 21 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/phdthesis/</guid>
+      <description>My PhD thesis</description>
+    </item>
     <item>
       <title>Entanglement bounds on the performance of quantum computing architectures</title>
       <link>http://localhost:1313/papers/entanglementbounds/</link>
