@@ -34,6 +34,7 @@
     --lineheight: 1.45;
     --lineclamp: 8;
     --marginleft: 26px;
+    --imgbordercolor: var(--secondary-bg);
 }
 
 .dark {
@@ -47,6 +48,8 @@
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
     --secondary-bg: rgb(144, 130, 117);
+    /* --imgbordercolor: rgb(207, 207, 207); */
+    --imgbordercolor: var(--secondary-bg)
 }
 
 .list {

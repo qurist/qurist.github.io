@@ -13,7 +13,7 @@
       <link>http://localhost:1313/papers/trappedionqaoa/</link>
       <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/papers/trappedionqaoa/</guid>
-      <description>We show how to classically simulate circuit representations of the Yang-Baxter equation when the generating gate belongs to certain families of solutions.</description>
+      <description>We implement a variational quantum algorithm (QAOA) to approximate the ground-state energy of a long-range Ising model, both quantum and classical, and investigating the algorithm performance on a trapped-ion quantum simulator with up to 40 qubits.</description>
     </item>
     <item>
       <title>Bang-bang control as a design principle for classical and quantum optimization algorithms</title>

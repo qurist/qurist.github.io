@@ -13,6 +13,11 @@ menu:
       weight: 2
       
 params:
+  # label:
+  #   text: "Aniruddha Bapat"
+  #   icon: /favicon.ico
+  #   iconHeight: 24
+
   math: true
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
@@ -59,7 +64,16 @@ params:
     - name: "education"
     - name: "skills"
 
-  # label:
-  #   text: "Aniruddha Bapat"
-  #   icon: /favicon.webp
-  #   iconHeight: 24
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    guessSyntax: true
+    style: autumn 
+  tableOfContents:
+    endLevel: 2
+    ordered: false
+    startLevel: 2
+      
