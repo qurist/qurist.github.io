@@ -59,7 +59,7 @@ params:
     - name: "education"
     - name: "skills"
 
-  label:
-    text: "Aniruddha Bapat"
-    icon: /favicon.webp
-    iconHeight: 24
+  # label:
+  #   text: "Aniruddha Bapat"
+  #   icon: /favicon.webp
+  #   iconHeight: 24

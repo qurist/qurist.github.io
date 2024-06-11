@@ -8,22 +8,31 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-06-05T19:01:28-05:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/optimal-control/</loc>
+    <lastmod>2020-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/</loc>
+    <lastmod>2020-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/publication/</loc>
+    <lastmod>2020-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/trappedionqaoa/</loc>
+    <lastmod>2020-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/quantum-computation/</loc>
+    <lastmod>2020-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/quantum-optimization/</loc>
+    <lastmod>2020-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2020-10-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/papers/entanglementbounds/</loc>
     <lastmod>2020-08-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/</loc>
-    <lastmod>2020-08-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/publication/</loc>
-    <lastmod>2020-08-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/quantum-architectures/</loc>
-    <lastmod>2020-08-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/quantum-computation/</loc>
-    <lastmod>2020-08-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2020-08-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/papers/unitaryentanglement/</loc>
@@ -39,8 +48,6 @@
     <loc>http://localhost:1313/curriculum-vitae/</loc>
   </url><url>
     <loc>http://localhost:1313/curriculum-vitae/education/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/optimal-control/</loc>
   </url><url>
     <loc>http://localhost:1313/curriculum-vitae/projects/</loc>
   </url><url>

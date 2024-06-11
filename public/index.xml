@@ -16,6 +16,13 @@
       <description></description>
     </item>
     <item>
+      <title>Quantum approximate optimization of the long-range Ising model with a trapped-ion quantum simulator</title>
+      <link>http://localhost:1313/papers/trappedionqaoa/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/trappedionqaoa/</guid>
+      <description>We show how to classically simulate circuit representations of the Yang-Baxter equation when the generating gate belongs to certain families of solutions.</description>
+    </item>
+    <item>
       <title>Entanglement bounds on the performance of quantum computing architectures</title>
       <link>http://localhost:1313/papers/entanglementbounds/</link>
       <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>

@@ -6,8 +6,15 @@
     <description>Recent content in Publication on Aniruddha Bapat</description>
     <generator>Hugo -- 0.126.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/publication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quantum approximate optimization of the long-range Ising model with a trapped-ion quantum simulator</title>
+      <link>http://localhost:1313/papers/trappedionqaoa/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/trappedionqaoa/</guid>
+      <description>We show how to classically simulate circuit representations of the Yang-Baxter equation when the generating gate belongs to certain families of solutions.</description>
+    </item>
     <item>
       <title>Entanglement bounds on the performance of quantum computing architectures</title>
       <link>http://localhost:1313/papers/entanglementbounds/</link>

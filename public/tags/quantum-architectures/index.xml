@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/papers/entanglementbounds/</guid>
       <description>In this paper, we show that a quantity known as the isoperimetric number establishes a lower bound on the time required to create highly entangled states.</description>
     </item>
+    <item>
+      <title>Unitary entanglement construction in hierarchical networks</title>
+      <link>http://localhost:1313/papers/unitaryentanglement/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/unitaryentanglement/</guid>
+      <description>We present numerical and analytical results on the speed at which large entangled states can be created on nearest-neighbor grids and hierarchy graphs. We also present a scheme for performing circuit placement on hierarchical quantum architectures.</description>
+    </item>
   </channel>
 </rss>
