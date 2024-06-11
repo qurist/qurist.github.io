@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Papers on Aniruddha Bapat</title>
+    <link>http://localhost:1313/papers/</link>
+    <description>Recent content in Papers on Aniruddha Bapat</description>
+    <generator>Hugo -- 0.126.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/papers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entanglement bounds on the performance of quantum computing architectures</title>
+      <link>http://localhost:1313/papers/entanglementbounds/</link>
+      <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/entanglementbounds/</guid>
+      <description>In this paper, we show that a quantity known as the isoperimetric number establishes a lower bound on the time required to create highly entangled states.</description>
+    </item>
+    <item>
+      <title>Unitary entanglement construction in hierarchical networks</title>
+      <link>http://localhost:1313/papers/unitaryentanglement/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/unitaryentanglement/</guid>
+      <description>We present numerical and analytical results on the speed at which large entangled states can be created on nearest-neighbor grids and hierarchy graphs. We also present a scheme for performing circuit placement on hierarchical quantum architectures.</description>
+    </item>
+    <item>
+      <title>Classical simulation of Yang-Baxter gates</title>
+      <link>http://localhost:1313/papers/yangbaxter/</link>
+      <pubDate>Sun, 30 Nov 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/yangbaxter/</guid>
+      <description>We show how to classically simulate circuit representations of the Yang-Baxter equation when the generating gate belongs to certain families of solutions.</description>
+    </item>
+    <item>
+      <title>Bang-bang control as a design principle for classical and quantum optimization algorithms</title>
+      <link>http://localhost:1313/papers/bangbang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/bangbang/</guid>
+      <description>We study the performance of several variational quantum optimization algorithms on two toy constraint satisfaction problem instances, and argue that the type of control strategy can be crucial to success.</description>
+    </item>
+  </channel>
+</rss>

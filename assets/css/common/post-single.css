@@ -82,7 +82,7 @@
     box-shadow: 0 2px 0 var(--darkpurple);
     color: currentColor; 
 }
-}
+
 
 .post-content a code {
     margin: auto 0;
@@ -270,7 +270,7 @@
 .toc {
     margin: 0 2px 20px 2px;
     border: 1px solid var(--border);
-    background: var(--code-bg);
+    background: var(--primary-bg);
     border-radius: var(--radius);
     padding: 0.4em;
 }
@@ -327,7 +327,7 @@
 .share-buttons,
 .paginav {
     border-radius: var(--radius);
-    background: var(--code-bg);
+    background: var(--primary-bg);
     border: 1px solid var(--border);
 }
 
@@ -338,7 +338,7 @@
     color: var(--secondary);
     font-size: 16px;
     line-height: 32px;
-    background: var(--code-bg);
+    background: var(--primary-bg);
 }
 
 .post-tags a:hover {

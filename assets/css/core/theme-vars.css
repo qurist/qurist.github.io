@@ -14,11 +14,16 @@
     --gray: rgb(165, 165, 165);
     --content: rgb(30, 30, 30);
     --hljs-bg: rgb(28, 29, 33);
-    --code-bg: rgb(245, 245, 245);
+    --primary-bg: rgb(245, 245, 245);
+    --secondary-bg: rgb(245, 220, 196);
+    --code-bg: rgb(34, 34, 38);
     --border: rgb(238, 238, 238);
-    --darkpurple: #8e7bd0;
-    --midpurple:#c0b5e5;
-    --lightpurple: #e5e1f4;
+    /* --darkpurple: #8e7bd0; */
+    /* --midpurple:#c0b5e5;
+    --lightpurple: #e5e1f4; */
+    --darkpurple: rgb(247, 144, 47);
+    --midpurple:rgb(246, 156, 72);
+    --lightpurple: rgb(244, 169, 99);
     --semibold: 500;
     --homesize: 16px;
     --textsize: 18px;
@@ -41,10 +46,11 @@
     --hljs-bg: rgb(46, 46, 51);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
+    --secondary-bg: rgb(144, 130, 117);
 }
 
 .list {
-    background: var(--code-bg);
+    background: var(--primary-bg);
 }
 
 .dark.list {

@@ -11,7 +11,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fa5fdbb3b56922fb5a463feec327e706a03e98f463f2bb95276b2ed03aab06cd.css" integrity="sha256-&#43;l/bs7VpIvtaRj/uwyfnBqA&#43;mPRj8ruVJ2su0DqrBs0=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5813cdcc64b446d5dd7f08519e4c1a5d09f1bd4ab6222d3aa1a102f387656aaa.css" integrity="sha256-WBPNzGS0RtXdfwhRnkwaXQnxvUq2Ii06oaEC84dlaqo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -82,6 +82,30 @@
 
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
  
 
 
@@ -131,13 +155,18 @@
                     <span>Curriculum Vitae</span>
                 </a>
             </li>
+            <li>
+                <a href="http://localhost:1313/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main"><div class="profile">
     <div class="profile_inner">
-        <img draggable="false" src="http://localhost:1313/profile_pic_2024.jpeg" alt="profile image" title=""
-            height="150" width="150" />
+        <img draggable="false" src="http://localhost:1313/profile_pic_2024.jpeg" alt="Aniruddha Bapat" title="Aniruddha Bapat"
+            height="200" width="200" />
         <h1>Aniruddha Bapat</h1>
         <span>I am a physicist who has worked primarily in the field of quantum computation, in addition to about a year&rsquo;s worth of work each in computational biophysics and quantitative finance. I have a broad and ever evolving range of interests, both professionally and personally.
 Until January 2024, I was a researcher at the high-frequency trading firm Optiver. Before that, I worked as a postdoc in quantum computing at the <a href="http://www.lbl.gov" title="lbl.gov" target="_blank">Lawrence Berkeley National Laboratory</a>

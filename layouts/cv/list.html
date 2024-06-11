@@ -95,7 +95,7 @@
 {{ range where (union site.RegularPages site.Sections) "Section" "papers"}}
 <div class="cv-entry-content">
   <p>    
-    {{.citation}}
+    {{.Params.citation | markdownify}}
   </p>
 </div>
 {{end}}
@@ -111,7 +111,7 @@
 <article class="{{ $class }}">
 
   {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
-  {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" true "IsSingle" false "isHidden" $isHidden) }}
 
   <header class="cv-entry-header">
     <h1>
