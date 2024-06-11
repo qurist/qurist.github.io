@@ -2,7 +2,7 @@
 title: Performing bang-anneal-bang quantum optimization
 date: 2022-11-17
 url: /papers/babpatent/
-tags: ["quantum computation", "publication", "optimal control"]
+tags: ["quantum computation", "patent", "optimal control"]
 author: [Lucas T Brady, Christopher L Baldwin, <a href="/">Aniruddha Bapat</a>, Yaroslav Kharkov, Alexey V Gorshkov]
 summary: we carry out simulations of optimal control protocols for energy minimization on various transverse field Ising models, demonstrating that optimal protocols typically exhibit a bang-anneal-bang pattern.  
 cover:
