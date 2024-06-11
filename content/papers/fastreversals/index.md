@@ -61,3 +61,9 @@ Bapat, A., Childs, A. M., Gorshkov, A. V., King, S., Schoute, E., & Shastri, H. 
 
 + [Recorded talk](https://www.youtube.com/watch?v=e-1rk_QFiCg), presented by Eddie Schoute at PLanQC'21.
 + [Presentation slides](/papers/fastreversals/presentation.pdf)
+
+---
+
+##### See also
++ This paper is a follow-up to our earlier work on [reversing a spin chain](/papers/spinchainreversal).
++ [Patent](/papers/frpatent).

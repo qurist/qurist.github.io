@@ -59,4 +59,5 @@ Pagano, G., Bapat, A., Becker, P., Collins, K. S., De, A., Hess, P. W., ... & Mo
 
 ##### Related material
 
++ [Supplementary material](/papers/trappedionqaoa/supplement.pdf)
 + [Poster](/papers/trappedionqaoa/poster.pdf)
