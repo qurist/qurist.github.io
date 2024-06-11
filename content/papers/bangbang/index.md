@@ -1,6 +1,6 @@
 ---
 title: Bang-bang control as a design principle for classical and quantum optimization algorithms 
-date: 2018-12-6
+date: 2018-12-06
 url: /papers/bangbang/
 tags: ["quantum computation", "publication", "optimal control"]
 author: [<a href="/">Aniruddha Bapat</a>, Stephen Jordan]

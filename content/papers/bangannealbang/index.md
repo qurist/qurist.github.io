@@ -4,7 +4,7 @@ date: 2021-02-19
 url: /papers/bangannealbang/
 tags: ["quantum computation", "publication", "optimal control"]
 author: [Lucas T Brady, Christopher L Baldwin, <a href="/">Aniruddha Bapat</a>, Yaroslav Kharkov, Alexey V Gorshkov]
-summary: we carry out simulations of optimal control protocols for energy minimization on various transverse field Ising models, demonstrating that optimal protocols typically exhibit a bang-anneal-bang pattern.  
+summary: We carry out simulations of optimal control protocols for energy minimization on various transverse field Ising models, demonstrating that optimal protocols typically exhibit a bang-anneal-bang pattern.  
 cover:
     image: "/papers/bangannealbang/icon.png"
     alt: ""
