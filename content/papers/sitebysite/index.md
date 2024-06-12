@@ -5,10 +5,10 @@ url: /papers/sitebysite/
 tags: ["quantum computation", "preprint", "quantum entanglement", "algorithms", "high-energy physics"]
 author: [Troy Sewell, <a href="/">Aniruddha Bapat</a>, Stephen Jordan]
 summary: In this paper, we study the scaling of the overlap between an $N$- and $(N+1)$-site ground state, as a function of the number of sites $N$, for a range of quadratic fermionic Hamiltonians.  
-cover:
-    image: "/papers/sitebysite/icon.png"
-    alt: ""
-    relative: true
+# cover:
+#     image: "/papers/sitebysite/icon.png"
+#     alt: ""
+#     relative: true
 editPost:
     URL: https://arxiv.org/abs/2207.01692
 citation: Sewell, T., Bapat, A., & Jordan, S. (2022). "Estimating gate complexities for the site-by-site preparation of fermionic vacua". *arXiv preprint arXiv:2207.01692*.

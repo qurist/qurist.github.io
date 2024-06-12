@@ -45,3 +45,7 @@ Devulapalli, D., Schoute, E., Bapat, A., Childs, A. M., & Gorshkov, A. V. (2022)
 ```
 
 ---
+
+##### See also
+
++ [Previous work](/papers/quantumrouting)
