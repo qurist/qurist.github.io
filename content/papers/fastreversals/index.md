@@ -2,7 +2,7 @@
 title: Quantum routing with fast reversals 
 date: 2021-08-31
 url: /papers/fastreversals/
-tags: ["quantum computation", "publication", "quantum architectures", "algorithms"]
+tags: ["quantum computation", "publication", "quantum architectures", "algorithms", "quantum routing"]
 author: [<a href="/">Aniruddha Bapat</a>, Andrew M Childs, Alexey V Gorshkov, Samuel King, Eddie Schoute, Hrishee Shastri]
 summary: We present methods for implementing arbitrary permutations of qubits under interaction constraints.  
 editPost:
