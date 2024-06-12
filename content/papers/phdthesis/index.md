@@ -4,7 +4,7 @@ date: 2021-08-21
 url: /papers/phdthesis/
 tags: ["quantum computation", "thesis", "quantum optimization", "optimal control", "quantum architectures"]
 author: [<a href="/">Aniruddha Bapat</a>]
-summary: My PhD thesis
+summary: My PhD thesis.
 editPost:
     URL: <a href="https://www.proquest.com/docview/2585963518?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses"> Link <\a>
 citation: Bapat, A. A. (2021). "Design and Optimization in Near-Term Quantum Computation". *Doctoral dissertation, University of Maryland, College Park*.
