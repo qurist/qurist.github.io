@@ -31,4 +31,105 @@
 </div>
 {{- end }}
 
+<!-- Education -->
+<article class="cv-entry">
+  <header class="cv-entry-header">
+    <h2>
+      <u class="cv-underline"> Education</u>
+    </h2>
+  </header>
+
+  {{- range site.Data.education -}}
+  <div class="cv-entry-content">
+    <p>    
+    <span style="float:left;justify-content: space-between;"><b> {{ .university}}</b>  |   <em>{{ .degree }}</em> </span>
+    <span style="float:right;justify-content: space-between;">{{ .year}}</span>
+    <br>
+    <span style="float:right;justify-content: space-between;">{{ .location }} </span>
+    {{if .thesis}}
+    Thesis: <em> {{.thesis}}</em> {{if .advisor}}(advised by {{.advisor}}) {{end}}
+    {{end}}
+    </p>
+  </div>
+  {{- end -}}
+
+</article>
+
+<!-- Work Experience -->
+<article class="cv-entry">
+  <header class="cv-entry-header">
+    <h2>
+      <u class="cv-underline"> Work Experience</u>
+    </h2>
+  </header>
+
+  {{- range site.Data.experience -}}
+  <div class="cv-entry-content">
+    <p><details style="open: false; padding: 20px; 
+    background-color: #e2d3c3;
+    border: #5a4b3a;
+    border-radius: 5px;"> 
+    <summary>    
+    <span style="float:left;display:flex;justify-content: space-between;"><b> {{ .company}}</b> | <em>{{ .role }}</em> </span>
+    <span style="float:right;display:flex;justify-content: space-between;">{{ .years}}</span>
+    <br>
+    <span style="float:right;display:flex;justify-content: space-between;">{{ .location }} </span>
+    <br>
+    </summary>
+    
+    {{.responsibilities}}
+  
+  </details></p>
+  </div>
+  {{- end -}}
+</article>
+
+<!-- Publications -->
+<article class="cv-entry">
+  <header class="cv-entry-header">
+    <h2>
+      <u class="cv-underline"> Publications, Preprints, and Patents</u>
+    </h2>
+  </header>
+
+{{ range where (union site.RegularPages site.Sections) "Section" "papers"}}
+<div class="cv-entry-content">
+  <p>    
+    {{.Params.citation | markdownify}}
+  </p>
+</div>
+{{end}}
+</article> 
+
+<!-- Honors -->
+
+
+<!-- List of page summaries of pages within section -->
+{{- $class := "cv-entry" -}}
+{{- range $cvsection := site.Params.cvItems -}}
+
+<article class="{{ $class }}">
+
+  {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" true "IsSingle" false "isHidden" $isHidden) }}
+
+  <header class="cv-entry-header">
+    <h1>
+      <u class="cv-underline">{{- replace $cvsection.name "-" " " | title -}}</u>
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h1>
+  </header>
+
+  <!-- Loop over CV sections -->
+  {{- $entries := where (union site.RegularPages site.Sections) ".Params.cvSection" $cvsection.name -}}
+  {{- range $entry := $entries -}}
+  <div class="cv-entry-content">
+    <p><details open=true>{{ .Content}}</details></p>
+  </div>
+  <!-- <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a> -->
+  {{- end -}}
+
+</article>
+{{- end -}}
+
 {{- end }}{{- /* end main */ -}}
