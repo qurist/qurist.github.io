@@ -3,10 +3,6 @@ languageCode: 'en-us'
 title: 'Aniruddha Bapat'
 theme: 'PaperMod'
 
-
-taxonomies:
-    tag: tags
-
 menu:
   main:
     - name: Curriculum Vitae
@@ -24,11 +20,6 @@ params:
   #   text: "Aniruddha Bapat"
   #   icon: /favicon-a.png
   #   iconHeight: 24
-
-  assets:
-    disableHLJS: true
-    myparam: true
-    disableScrollBarStyle: true
 
   math: true
   ShowBreadCrumbs: true
@@ -69,6 +60,10 @@ params:
     imageWidth: 200
     imageHeight: 200
     imageTitle: Aniruddha Bapat
+
+  assets:
+    disableHLJS: true
+    disableScrollBarStyle: true
 
   socialIcons: # optional
     - name: "github"

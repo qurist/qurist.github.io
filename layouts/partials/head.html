@@ -44,7 +44,7 @@
 {{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
 
 {{- /* include `an-old-hope` if hljs is on */}}
-{{- $isHLJSdisabled := (site.Params.assets.disableHLJS | default true) }}
+{{- $isHLJSdisabled := (site.Params.assets.disableHLJS | default false) }}
 {{- $hljs := (cond ($isHLJSdisabled) (".chroma { background-color: unset !important;}" | resources.FromString "assets/css/hljs-blank.css") (resources.Get "css/hljs/an-old-hope.min.css")) }}
 
 {{- /* order is important */}}
@@ -78,7 +78,7 @@
 {{- end -}}
 
 {{- /* Highlight.js */}}
-{{- $isHLJSdisabled := (site.Params.assets.disableHLJS | default .Params.disableHLJS | default true ) }}
+{{- $isHLJSdisabled := (site.Params.assets.disableHLJS | default .Params.disableHLJS | default false ) }}
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (not $isHLJSdisabled)) }}
 {{- if not site.Params.assets.disableFingerprinting }}
 {{- $highlight := slice (resources.Get "js/highlight.min.js") | resources.Concat "assets/js/highlight.js" | fingerprint }}
