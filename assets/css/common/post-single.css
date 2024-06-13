@@ -76,11 +76,24 @@
     color: var(--secondary);
 }
 
-.post-content a,
-.post-meta a,
+.post-content a:link,
+.post-meta a:link,
+.toc a:link {
+    color: var(--lightflavor);
+}
+
+.post-content a:visited,
+.post-meta a:visited,
+.toc a:visited {
+    color: var(--lightflavor);
+}
+
+.post-content a:hover,
+.post-meta a:hover,
 .toc a:hover {
-    box-shadow: 0 2px 0 var(--darkpurple);
-    color: currentColor; 
+    /* box-shadow: 0 2px 0 var(--darkflavor); */
+    color: var(--darkflavor)
+    /* color: currentColor;  */
 }
 
 
@@ -327,7 +340,7 @@
 .share-buttons,
 .paginav {
     border-radius: var(--radius);
-    background: var(--primary-bg);
+    background: var(--entry-tag-color);
     border: 1px solid var(--border);
 }
 
@@ -338,15 +351,15 @@
     color: var(--secondary);
     font-size: 16px;
     line-height: 32px;
-    background: var(--primary-bg);
+    background: var(--entry-tag-color);
 }
 
 .post-tags a:hover {
-    background: var(--lightpurple);
+    background: var(--lightflavor);
 }
 
 .paginav a:hover {
-    background: var(--lightpurple);
+    background: var(--lightflavor);
 }
 
 .share-buttons {
@@ -372,11 +385,11 @@ h4:hover .anchor,
 h5:hover .anchor,
 h6:hover .anchor {
     display: inline-flex;
-    color: var(--darkpurple);
+    color: var(--darkflavor);
     margin-inline-start: 10px;
     font-weight: 700;
     user-select: none;
-    box-shadow: 0 0px 0 var(--darkpurple);
+    box-shadow: 0 0px 0 var(--darkflavor);
 }
 
 .paginav {
@@ -426,9 +439,9 @@ img.in-text {
 }
 
 a[href^="#fn:"], a[href^="#fnref:"] {
-     box-shadow: 0 0px 0 var(--darkpurple);
+     box-shadow: 0 0px 0 var(--darkflavor);
 }
 
 a[href^="#fn:"]:hover, a[href^="#fnref:"]:hover {
-    color: var(--darkpurple);
+    color: var(--darkflavor);
 }
