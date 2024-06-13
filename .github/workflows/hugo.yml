@@ -60,7 +60,7 @@ jobs:
           hugo \
             --gc \
             --config config.yml \
-            -D \		
+            -D \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
       - name: Upload artifact
