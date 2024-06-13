@@ -3,6 +3,10 @@ languageCode: 'en-us'
 title: 'Aniruddha Bapat'
 theme: 'PaperMod'
 
+
+taxonomies:
+    tag: tags
+
 menu:
   main:
     - name: Curriculum Vitae
@@ -21,15 +25,16 @@ params:
   #   icon: /favicon-a.png
   #   iconHeight: 24
 
+  assets:
+    disableHLJS: true
+    myparam: true
+    disableScrollBarStyle: true
+
   math: true
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
   hideFooter: True
   ShowToc: true
-
-  assets:
-    disableHLJS: true
-    disableScrollBarStyle: true
 
   cover:
     hiddenInList: true
