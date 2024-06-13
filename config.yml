@@ -3,6 +3,9 @@ languageCode: 'en-us'
 title: 'Aniruddha Bapat'
 theme: 'PaperMod'
 
+taxonomies:
+  tag: tags
+
 menu:
   main:
     - name: Curriculum Vitae
@@ -50,9 +53,9 @@ params:
         - I enjoy drinking coffee. Specifically, I enjoy starting every day by pulling one espresso shot and turning it into the perfect cortado or flat white. 
         - My fiancée and I are avid foragers, and among the growing list of mushrooms
          we have found in the wild are such luminaries as the morel, the chanterelle, puffballs (giant and small), chicken of the woods, and *maitake* (also known as the hen of the woods). 
-         There are others (herbs too).
+         We've spotted some interesting herbs too.
         - During the pandemic, I was gifted a homebrewing kit for my birthday by my cousin Devashish, and what started as a fun experiment soon broke out into a pretty serious brewing hobby. 
-        We made a belgian tripel, IPAs, and several other styles of beer, some of which were of our own invention. 
+        We made a Belgian-style tripel, IPAs, and several other styles of beer, some of which were of our own invention. 
         One time we made a batch so dubious that several bottles exploded during the fermentation process and had to be safely de-pressurized in our backyard before they caused any further havoc. 
         Luckily, no one was harmed.
         - I play chess. Huge fan of the Botez gambit. 
