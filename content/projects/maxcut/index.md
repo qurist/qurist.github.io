@@ -3,6 +3,7 @@ title: A quantum-inspired solver for the MaxCut problem
 date: 2024-06-17
 url: /projects/maxcut/
 tags: ["quantum computation", "project", "optimization", "quantum-inspired optimization"]
+draft: true
 author: [<a href="/">Aniruddha Bapat</a>]
 summary: In this project, I describe some quantum-inspired heuristic methods for finding approximate solutions to the MaxCut problem.  
 # cover:
