@@ -1,7 +1,7 @@
 ---
 title: "Skills"
 date:
-draft: true
+draft: false
 type: cv
 cvSection: "skills"
 ---
