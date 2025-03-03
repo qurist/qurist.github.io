@@ -55,11 +55,35 @@ Returning the the gradient ascent in continuous space, let's first express the g
 \begin{equation}
 \partial C/\partial{v_i} = -\frac{1}{2} \sum_{j} W_{ij} v_j \equiv -\frac{1}{2}(A\cdot \vec{v})_i,
 \end{equation}
-where $W$ is the weighted adjacency matrix that encodes the edge weights, $W\_{ij}=W\_{ji}=w\_{ij}$. So, we can write the full gradient succinctly as $\nabla_v C = -\frac{1}{2} W\cdot\vec v$. The gradient update is then $\vec v \rightarrow \vec v - \alpha\frac{1}{2} W\cdot\vec v$, where $\alpha$ is commonly referred to as the learning rate, which is a free hyperparameter in the algorithm. In the first go, we can set the learning rate to be a constant. A well-motivated choice for $\alpha$ is based on the Newton's method, in which the learning rate is set to one divided by the second derivative of the function. In our case, the matrix of second derivatives (the Hessian) is equal to $-\frac{1}{2} W$. Therefore, a sensible scalar value for $\alpha$ is simply $2/\lVert W\rVert$ where $\lVert W\rVert$ is an appropriate matrix norm. We'll use the $1$-norm, $\lVert W \rVert_1 = \max_j \sum_i |W\_{ij}|$, which in our case has the natural interpretation of being the maximum possible value of $W\cdot\vec v$ when $v_i \in [-1,1]$.
+where $W$ is the weighted adjacency matrix that encodes the edge weights, $W\_{ij}=W\_{ji}=w\_{ij}$. So, we can write the full gradient succinctly as $\nabla_v C = -\frac{1}{2} W\cdot\vec v$. The gradient update is then $\vec v \rightarrow \vec v - \alpha\frac{1}{2} W\cdot\vec v$, where $\alpha$ is commonly referred to as the learning rate, which is a free hyperparameter in the algorithm. In the first go, we can set the learning rate to be a constant. A well-motivated choice for $\alpha$ is based on the Newton's method, in which the learning rate is set to one divided by the second derivative of the function. In our case, the matrix of second derivatives (the Hessian) is equal to $-\frac{1}{2} W$. Therefore, a sensible scalar value for $\alpha$ is simply $2/\lVert W\rVert$ where $\lVert W\rVert$ is an appropriate matrix norm. We'll use the $1$-norm, $\lVert W \rVert_1 = \max_j \sum_i |W\_{ij}|$, which in our case has the natural interpretation of being the maximum possible value of any component of $W\cdot\vec v$ when $v_i \in [-1,1]$.
+
+To handle the constraint, I will use a simple scheme that "clips" each spin value to lie within the range $[-1,1]$ after every gradient update. This gives us a first version of the algorithm:
+- For $t=1,\ldots, T$, do:
+    - Initialize the spins randomly, $\vec v_0$ where $v\_{0i}\sim \text{Uniform[-1,1]}$ for each $i$.
+    - For $k=1,\ldots, K$, do:
+        - Gradient update $\vec v_{k}\rightarrow \vec v_{k-1} + \alpha \nabla_v C$. 
+        - Clip $v_{ki} \rightarrow \max(-1, \min(1, v_{ki}))$ for each spin index $i$.
+    - Round $\vec v_K$ to the final spin configuration for trial $t$, $\vec{s_t}$, as follows: $s_{ti} = \text{sign}(v_{Ki})$.
+- Return the rounded spin configuration with the best objective, $\text{argmax}_t C(\vec s_t)$ for each $i$.
+
+This algorithm has three hyperparameters: The number of independent trials $T$, the number of gradient updates $K$ per trial, and the learning rate $\alpha$. 
+
+Let's analyze all three using our generated instances. First, I will look at learning rate.
 
 ---
-### Experiment 1: Measuring solution quality after a fixed number of gradient updates
+### Experiment 1: Solution quality as a function of learning rate $\alpha$
 
+What makes the learning rate "bad"? There are two notions of badness I can think of:
+- The algorithm converges poorly or takes too long to converge ($K$ needs to be very large), or
+- The solutions found by a properly converged algorithm are of poor quality on average.   
+
+Both are meaningful (and indeed both can be true at once), but in this experiment we will focus on the second notion. That is, 
+we will run the algorithm for a range of values of $\alpha$, and for each run, the algorithm will be given ample time to converge, in the sense that we'll terminate only when $|\nabla_v C| < \epsilon$, where $\epsilon$ is a fixed tolerance. Since convergence is not guaranteed in finite time, we also terminate if the algorithm has not converged after a large number of gradient updates $M$ (a "timeout"). The choices for $M$ and $\epsilon$ are somewhat arbitrary, but will fix our notion of convergence for this experiment. 
+Then, we will collect statistics by running a fixed $T$ trials for each $\alpha$, and look at metrics such as the mean solution quality vs. $\alpha$.
+
+An advantage of doing the experiment this way is that our results no longer depend on the hyperparameter $K$, the number of gradient updates. The results will still depend on the number of trials, $T$ (the last hyperparameter), but by looking at statistical properties such as mean, median, we will hopefully milden this dependence and can isolate the effect of $\alpha$ on the performance. 
+
+I will use $M=1000, \epsilon=10^{-2}, T=30$. As argued in the previous section, a natural choice for $\alpha$ is $\bar\alpha := 2/\lVert W\rVert_1$, so our scan will be over $c\bar\alpha$, where the prefactor $c$ varies from $0.1$ to $10$.
 
 ---
 ### Experiment 2: Measuring time-to-solution

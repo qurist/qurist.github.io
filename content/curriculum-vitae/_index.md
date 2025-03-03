@@ -1,7 +1,7 @@
 ---
 title: "Curriculum Vitae"
 date:
-draft: true
+draft: false
 type: cv
 ---
 
